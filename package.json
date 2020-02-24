@@ -1,0 +1,47 @@
+{
+  "name": "travix",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.8.3",
+    "@material-ui/icons": "^4.5.1",
+    "@material-ui/styles": "^4.9.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^7.2.1",
+    "autoprefixer-stylus": "^1.0.0",
+    "concurrently": "^5.0.2",
+    "moment": "^2.24.0",
+    "react": "^16.12.0",
+    "react-big-calendar": "^0.23.0",
+    "react-dom": "^16.12.0",
+    "react-modal": "^3.11.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.3.0",
+    "stylus": "^0.54.7"
+  },
+  "scripts": {
+    "start": "node ./node_modules/react-scripts/bin/react-scripts.js start",
+    "watch": "concurrently --names \"webpack, stylus\" --prefix name \"npm run start\" \"npm run styles:watch\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "styles": "node ./node_modules/stylus/bin/stylus -u autoprefixer-stylus ./src/css/style.styl -o ./src/css/style.css",
+    "styles:watch": "npm run styles -- -w"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
