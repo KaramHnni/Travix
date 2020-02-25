@@ -13,7 +13,7 @@ const Header = (props) => {
             <div className="right-header">
             <ul className="header-ul">
                 <li><Link className={location === "/" ?"current-li":"" } to="/">Dashboard</Link></li>
-                <li><Link className={location === "/forms" ?"current-li":"" }  to="/forms">Forms</Link></li>
+                <li><Link className={location === "/clients" ?"current-li":"" }  to="/clients">Clients</Link></li>
                 <li><Link className={location === "/calendar" ?"current-li":"" }  to="/calendar">Calendar</Link></li>
             </ul>
             <div className="profile-area">
