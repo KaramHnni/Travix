@@ -55,7 +55,7 @@ function AppCalendar() {
     console.log(`start : ${startSlot}`);
     console.log(`end: ${endSlot}`);
     if (Title) {
-      setEvent([...events, { Title, startDate, endDate }]);
+      setEvent([...events, { title: Title, start : startSlot, end : endSlot }]);
       setOpen(false);
       setInputValue({ title: "" });
     }
