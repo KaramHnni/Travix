@@ -17,19 +17,23 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 
-const Input = ({ handleInputChange , name ,label,value}) => {
+const Input = ({label, id,handleInputChange,name ,value}) => {
   const classes = useStyles();
 
   return (
     <ThemeProvider theme={theme}>
       <TextField
+        type="date"
+        id={id}
         onChange={e => handleInputChange(e)}
-        id="basicInput"
-        label={label}
         name={name}
+        label={label}
         value={value}
         variant="outlined"
         color="primary"
+        InputLabelProps={{
+          shrink: true,
+        }}
         className={classes.inputControl}
       />
     </ThemeProvider>
